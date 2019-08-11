@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:latest
 MAINTAINER miiro@getintodevops.com
 USER root
 
@@ -16,4 +16,3 @@ RUN apt-get update && \
       stable" && \
    apt-get update && \
    apt-get -y install docker-ce
-
